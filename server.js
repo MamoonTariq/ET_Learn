@@ -6,5 +6,5 @@ const DB = require("./config/database");
 DB();
 
 app.listen(process.env.PORT, () => {
-  console.log("Now your server running on port 8000 " + process.env.PORT);
+  console.log("server is running on port:" + process.env.PORT);
 });
