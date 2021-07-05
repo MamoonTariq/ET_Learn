@@ -2,13 +2,14 @@
 
 It is simple repo to learn NODE in MVC Patterns
 
-## Setup
-
+# Setup
 npm init
 
-## Install express
-
+# Install express
 npm install --save express
+
+# Install Nodemon //restart server automatically after file changes
+npm i --save-dev nodemon
 
 ### License
 
