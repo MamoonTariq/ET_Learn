@@ -1,0 +1,23 @@
+{
+  "name": "et_learn",
+  "version": "1.0.0",
+  "description": "Learn Node MVC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MamoonTariq/ET_Learn.git"
+  },
+  "author": "M Mamoon Tariq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MamoonTariq/ET_Learn/issues"
+  },
+  "homepage": "https://github.com/MamoonTariq/ET_Learn#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
