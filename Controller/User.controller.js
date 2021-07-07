@@ -61,7 +61,7 @@ module.exports = {
       if (await bcrypt.compare(plainTextPassword, user.password)) {
         const token = jwt.sign(
           {
-            id: user._id,
+            _id: user._id,
             username: user.username,
           },
           jwt_secret
@@ -79,6 +79,8 @@ module.exports = {
   updatePassword: async (req, res) => {
     const { token, password: plainTextPassword } = req.body;
 
+    !token ? res.json({ status: 0, message: "Token required" }) : null;
+
     !plainTextPassword
       ? res.json({ status: 0, message: "Invalid Password" })
       : null;
@@ -87,6 +89,7 @@ module.exports = {
       const user = jwt.verify(token, jwt_secret);
 
       const _id = user._id;
+      console.log(user, "This is the check");
       const newpassword = await bcrypt.hash(plainTextPassword, 10);
       await UserModel.updateOne(
         { _id },
