@@ -7,7 +7,7 @@ require("dotenv").config();
 DB();
 
 app.use(express.json());
-app.use("/api/product", routes);
+app.use("/api/v1", routes);
 
 app.listen(process.env.PORT, () => {
   console.log("server is running on port:" + process.env.PORT);

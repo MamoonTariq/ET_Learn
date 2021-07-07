@@ -17,6 +17,9 @@ npm i mongoose
 **=> Install Env File**
 npm i dotenv
 
+**=> Install bcrypt to convert password to hash**
+npm install bcrypt
+
 ### License
 
 Academic Free License v3.0
