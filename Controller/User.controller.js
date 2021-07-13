@@ -34,7 +34,7 @@ module.exports = {
         });
       })
       .catch((error) => {
-        if (11000 === 11000) {
+        if (error === 11000) {
           return res.json({
             success: 0,
             message: "User Name Already Exists",
