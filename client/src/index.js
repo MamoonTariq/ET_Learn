@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./App/Static/Layout";
+import "./Common/Localization/i18n";
 
 ReactDOM.render(
   <ChakraProvider theme={theme}>

@@ -11,6 +11,15 @@ npm install --save react-router-dom
 **=> Chakra-UI:**
 npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
 
+**=> Formik:**
+npm install formik --save
+
+**=> Yup:**
+npm install yup --save
+
+**=> i18next for varibale Localization and also for Translation**
+npm install react-i18next i18next --save
+
 ### License
 
 Academic Free License v3.0
