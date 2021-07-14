@@ -20,6 +20,9 @@ npm install yup --save
 **=> i18next for varibale Localization and also for Translation**
 npm install react-i18next i18next --save
 
+**=> React Helmet (update title and meta tags)**
+npm install --save react-helmet
+
 ### License
 
 Academic Free License v3.0

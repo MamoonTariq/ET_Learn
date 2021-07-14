@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Formik, ErrorMessage } from "formik";
 import ValidationSchema from "../../Common/LoginValidation";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
 
 import {
   Container,
@@ -24,6 +25,9 @@ const Login = () => {
   const { t: LT } = useTranslation();
   return (
     <>
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <Formik
         initialValues={{
           email: "",
